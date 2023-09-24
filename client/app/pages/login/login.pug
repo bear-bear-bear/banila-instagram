@@ -1,18 +1,22 @@
 extends /templates/auth-container/auth-container
 
-block doc-title 
+block doc-title
 	title Instagram
 
 block aside-img
 	aside.iphone
 		section.iphone__screen.iphone__screen--first
+		section.iphone__screen.iphone__screen--second
+		section.iphone__screen.iphone__screen--third
+		section.iphone__screen.iphone__screen--fourth
+		section.iphone__screen.iphone__screen--fifth
 
 block auth-form-contents
 	form.auth-form(action="")
 		button(type="submit") 로그인
-		p 
+		p
 			a(href= lost_password) 비밀번호를 잊으셨습니까 휴먼?
 
 block separated-contents
-	p 계정이 없으신가요? 
+	p 계정이 없으신가요?
 		a(href= sign_up) 가입하기
